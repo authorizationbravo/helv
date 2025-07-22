@@ -24,3 +24,24 @@
 }
 
 @layer components, mantine, nextra, overwrite;
+
+@import 'nextra-theme-docs/dist/style.css' layer(nextra);
+
+/* Custom fade-in effect */
+@layer overwrite {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer components, mantine, nextra, overwrite;
