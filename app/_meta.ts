@@ -7,11 +7,11 @@ export default {
     title: 'Documentation',
   },
   community: {
-    title: 'Community',
+    title: 'Narcissit',
     type: 'menu',
     items: {
       blog: {
-        title: 'Blog',
+        title: 'Slut',
         href: 'https://undolog.com/',
       },
       medium: {
